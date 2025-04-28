@@ -1,0 +1,49 @@
+// -------------------------
+// Classe Professor (herda Pessoa)
+// -------------------------
+class Professor extends Pessoa {
+    // Atributos específicos de um professor
+    private String universidade;     // Universidade onde trabalha
+    private String departamento;     // Departamento do professor
+    private int numeroDaSala;        // Sala onde trabalha
+    private final String cpf;        // CPF (não pode mudar)
+
+    // Construtor da classe Professor
+    public Professor(String nome, String sexo, String dataNascimento, String cidadeNatal, String cidadeReside,
+                     String universidade, String departamento, int numeroDaSala, String cpf) {
+        super(nome, sexo, dataNascimento, cidadeNatal, cidadeReside); // Chama o construtor da classe Pessoa
+        this.universidade = universidade;
+        this.departamento = departamento;
+        this.numeroDaSala = numeroDaSala;
+        this.cpf = cpf;
+    }
+
+    // Métodos para acessar e alterar os atributos
+    public String getUniversidade() {
+        return universidade;
+    }
+
+    public void setUniversidade(String universidade) {
+        this.universidade = universidade;
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+
+    public int getNumeroDaSala() {
+        return numeroDaSala;
+    }
+
+    public void setNumeroDaSala(int numeroDaSala) {
+        this.numeroDaSala = numeroDaSala;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+}
