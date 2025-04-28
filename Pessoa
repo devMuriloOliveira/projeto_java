@@ -1,0 +1,49 @@
+// -------------------------
+// Classe Pessoa
+// -------------------------
+class Pessoa {
+    // Atributos básicos de uma pessoa
+    protected String nome;                 // Nome da pessoa
+    protected final String sexo;           // Sexo da pessoa (não pode mudar depois de criado)
+    protected final String dataNascimento; // Data de nascimento (também não muda)
+    protected final String cidadeNatal;    // Cidade onde nasceu (também é final)
+    protected String cidadeReside;         // Cidade onde mora atualmente
+
+    // Construtor da classe Pessoa (define os valores iniciais dos atributos)
+    public Pessoa(String nome, String sexo, String dataNascimento, String cidadeNatal, String cidadeReside) {
+        this.nome = nome;
+        this.sexo = sexo;
+        this.dataNascimento = dataNascimento;
+        this.cidadeNatal = cidadeNatal;
+        this.cidadeReside = cidadeReside;
+    }
+
+    // Métodos para acessar (get) e alterar (set) os atributos
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public String getCidadeNatal() {
+        return cidadeNatal;
+    }
+
+    public String getCidadeReside() {
+        return cidadeReside;
+    }
+
+    public void setCidadeReside(String cidadeReside) {
+        this.cidadeReside = cidadeReside;
+    }
+}
