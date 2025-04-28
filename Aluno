@@ -1,0 +1,39 @@
+// -------------------------
+// Classe Aluno (herda Pessoa)
+// -------------------------
+class Aluno extends Pessoa {
+    // Atributos específicos de um aluno
+    private final int numeroMatricula;  // Número da matrícula (não muda)
+    private String universidade;        // Nome da universidade
+    private String curso;               // Nome do curso
+
+    // Construtor da classe Aluno
+    public Aluno(String nome, String sexo, String dataNascimento, String cidadeNatal, String cidadeReside,
+                 int numeroMatricula, String universidade, String curso) {
+        super(nome, sexo, dataNascimento, cidadeNatal, cidadeReside); // Chama o construtor da classe Pessoa
+        this.numeroMatricula = numeroMatricula;
+        this.universidade = universidade;
+        this.curso = curso;
+    }
+
+    // Métodos para acessar e alterar os atributos
+    public int getNumeroMatricula() {
+        return numeroMatricula;
+    }
+
+    public String getUniversidade() {
+        return universidade;
+    }
+
+    public void setUniversidade(String universidade) {
+        this.universidade = universidade;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+}
